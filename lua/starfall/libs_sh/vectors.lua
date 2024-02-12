@@ -401,7 +401,7 @@ function vec_methods:rotate(b)
 	local pcos, psin = math_cos(pitch), math_sin(pitch)
 	local rcos, rsin = math_cos(roll), math_sin(roll)
 
-	rawset(self, 1, (vec.x*(ycos*pcos) + vec.y*(ycos*pcos*rcos-ysin*rcos) + vec.z*(ycos*pcos*rcos+ysin*rcos))	)
+	rawset(self, 1, (vec.x*(ycos*pcos) + vec.y*(ycos*pcos*rcos-ysin*rcos) + vec.z*(ycos*pcos*rcos+ysin*rcos)))
 	rawset(self, 2, (vec.x*(ysin*pcos) + vec.y*(ysin*pcos*rcos+ycos*rcos) + vec.z*(ysin*pcos*rcos-ycos*rcos)))
 	rawset(self, 3, (vec.x*(-pcos) + vec.y*(pcos*rcos) + vec.z*(pcos*rcos)))
 end
